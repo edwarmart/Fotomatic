@@ -373,6 +373,7 @@ gn-up-cta span strong {
 }
 
 #quotes-section .quote {
+	margin-right: 2rem;
 }
 
 #quotes-section .quote-citation {
@@ -409,24 +410,42 @@ gn-up-cta span strong {
 
   }
 }
-@media only screen and (max-width: 450p){
+@media only screen and (max-width: 890px){
+	#quotes-section{
+		padding: 3rem 0;
+	}
+	#quotes-section .content{
+		padding: 0 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#quotes-section .quote{
+		text-align: left;
+	}
 	#quotes-section .content img{
-		float: right;
+		height: 2rem; 
 	}
 }
 @media only screen and (max-width: 450px){
 	#quotes-section{
 		justify-content: center;
-		margin: 1rem;
+		background-color: white;
+		padding: 0;
+		margin: 0;
 	}
-	#quotes-section .content{
-		margin-top: 3rem;
+	#quotes-section .content.center{
+		margin: 2rem 0;
+		padding-bottom: 2rem;
 		display: flex;
 		flex-direction: column;
 		background-color: white;
 	}
 	.quote{
 		display: block;
+		margin-bottom: 1rem;
+	}
+	#quotes-section img{
 		margin-bottom: 1rem;
 	}
 }
