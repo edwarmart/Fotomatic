@@ -275,7 +275,11 @@ gn-up-cta span strong {
     line-height: 1.4;
   }
 }
-
+@media only screen and (max-width: 450px){
+	#filters-section .content{
+		
+	}
+}
 @media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
@@ -430,6 +434,7 @@ gn-up-cta span strong {
 @media only screen and (max-width: 450px){
 	#quotes-section{
 		justify-content: center;
+		align-items: center;
 		background-color: white;
 		padding: 0;
 		margin: 0;
@@ -439,14 +444,18 @@ gn-up-cta span strong {
 		padding-bottom: 2rem;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		background-color: white;
 	}
 	.quote{
 		display: block;
+		padding-left: 3rem;
 		margin-bottom: 1rem;
+		margin-top: 1rem;
+		width: auto;
 	}
 	#quotes-section img{
-		margin-bottom: 1rem;
+		padding-bottom: 2rem;
 	}
 }
 
